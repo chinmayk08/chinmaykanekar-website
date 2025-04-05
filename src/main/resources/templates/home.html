@@ -1,0 +1,52 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome Page</title>
+    <link rel="stylesheet" th:href="@{/css/menu.css}">
+
+</head>
+<body>
+
+<!-- Include menu -->
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<!-- Main content -->
+<div id="welcome-box" class="container" style="text-align:center; padding: 50px;">
+    <h1>Welcome!</h1>
+    <p>You have successfully logged in.</p>
+</div>
+<script>
+    const box = document.getElementById('welcome-box');
+    let x = 0;
+    let y = 0;
+    let dx = 2;
+    let dy = 2;
+
+    function animate() {
+        const boxWidth = box.offsetWidth;
+        const boxHeight = box.offsetHeight;
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        x += dx;
+        y += dy;
+
+        if (x + boxWidth >= windowWidth || x <= 0) {
+            dx = -dx;
+        }
+        if (y + boxHeight >= windowHeight || y <= 0) {
+            dy = -dy;
+        }
+
+        box.style.left = x + 'px';
+        box.style.top = y + 'px';
+
+        requestAnimationFrame(animate);
+    }
+    animate();
+</script>
+
+
+</body>
+</html>
