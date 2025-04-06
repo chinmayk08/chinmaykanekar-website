@@ -8,26 +8,35 @@ body {
 }
 
 .login-container {
-    width: 90%;
-    background-color: #87CEEB;
-    padding: 10px 20px;
-    border-radius: 10px;
+    width: 40%;
+    background-color: #e8e8e6;
+    padding: 10px 10px;
+    border-radius: 4px;
     box-shadow: 0 50px 35px rgba(0, 0, 0, 0.8);
-    width: 400px;
+    width: 290px;
+    border: 1px solid #ccc;
 
 }
 
-h2,h3 {
+h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #000000;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+
+
+}
+h3  {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
 
 }
 
 form label {
-    font-weight: bold;
+
     display: block;
     margin-top: 15px;
     color: #36454F;
@@ -35,22 +44,24 @@ form label {
 }
 
 input[type="text"], input[type="password"] {
-    width: 95%;
-    padding: 6px 10px;
+    width: 92%;
+    padding: 10px 10px;
     margin-top: 8px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    font-family: Helvetica, Arial, sans-serif;
+
 }
 
 button {
 
-    width: 40%;
-    padding: 12px;
+    width: 100%;
+    padding: 10px 10px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 8px;
-    margin: 20px auto 0 auto;
+    margin-top: 8px;
     font-weight: bold;
     cursor: pointer;
     display: block;
@@ -65,5 +76,16 @@ button:hover {
     margin-top: 15px;
     text-align: center;
 }
-
+body.login-background {
+    background-image: url('/images/login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
 

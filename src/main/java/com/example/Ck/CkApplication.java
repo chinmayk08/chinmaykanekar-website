@@ -12,7 +12,7 @@ public class CkApplication {
 		SpringApplication.run(CkApplication.class, args);
 
 		try {
-			String url = "http://localhost:7070";
+			String url = "http://localhost:7071";
 			String chromePath = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 
 			new ProcessBuilder(chromePath, url).start();
