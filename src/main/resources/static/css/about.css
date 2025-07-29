@@ -44,12 +44,14 @@ button {
     padding: 40px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border-radius: 8px;
+    text-decoration: none;
 }
 
 .about-container h1 {
     text-align: center;
     color: #005b96;
     margin-bottom: 30px;
+    text-decoration: none;
 }
 
 .about-container h3 {
@@ -59,11 +61,13 @@ button {
     font-size: 20px;
     border-left: 4px solid #005b96;
     padding-left: 10px;
+    text-decoration: none;
 }
 
 .profile-section {
     text-align: center;
     margin-bottom: 30px;
+    text-decoration: none;
 }
 
 .profile-photo {
@@ -77,6 +81,7 @@ button {
 .resume-download {
     text-align: center;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .download-btn {
@@ -86,8 +91,11 @@ button {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.resume-download a {
+  text-decoration: none;
 }
 
 .download-btn:hover {
